@@ -10,7 +10,7 @@ export default function App() {
   useEffect(() => {
     api.get('projects').then(response => {
       setProjects(response.data);
-    }).catch((err) => { console.log(err); console.log('aqui no erro sssbem de boa') })
+    }).catch((err) => { console.log(err) })
   }, []);
 
   async function handleAddProject() {
